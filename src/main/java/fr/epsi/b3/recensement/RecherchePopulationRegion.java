@@ -2,7 +2,7 @@ package fr.epsi.b3.recensement;
 
 import java.util.Scanner;
 
-public class RecherchePopulationRegion {
+public class RecherchePopulationRegion extends MenuService {
     public void traiter(Recensement recensement, Scanner scanner){
         String region = scanner.nextLine();
         int population = 0;

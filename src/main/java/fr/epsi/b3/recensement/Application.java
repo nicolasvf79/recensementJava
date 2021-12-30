@@ -1,5 +1,4 @@
 package fr.epsi.b3.recensement;
-import fr.diginamic.fichier.LectureFichier;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -34,7 +33,6 @@ public class Application {
                     recensement.getVilles().add(ville);
                 } catch (Exception e)
                 {
-
                 }
             }
         } catch (IOException e) {
@@ -105,23 +103,5 @@ public class Application {
             case 9:
                 break;
         }
-    }
-
-    public static boolean isNumeric(String string) {
-        int intValue;
-
-        //System.out.println(String.format("Parsing string: \"%s\"", string));
-
-        if(string == null || string.equals("")) {
-            return false;
-        }
-
-        try {
-            intValue = Integer.parseInt(string);
-            return true;
-        } catch (NumberFormatException e) {
-            //System.out.println("Input String cannot be parsed to Integer.");
-        }
-        return false;
     }
 }
